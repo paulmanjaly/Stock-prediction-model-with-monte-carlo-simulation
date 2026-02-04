@@ -1,0 +1,122 @@
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: #f6f8fb;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 22px;
+    color: #00b386;
+}
+
+.nav-links span {
+    margin: 0 15px;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.nav-links span:hover {
+    color: #111827;
+}
+
+/* Main layout */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* Search section */
+.search-container {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+input {
+    padding: 12px;
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    background: #00d09c;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00b386;
+}
+
+/* Suggestions */
+.suggestions {
+    position: absolute;
+    top: 46px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    max-height: 180px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.suggestion-item {
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: #f3f4f6;
+}
+
+/* Results */
+#result {
+    margin: 25px 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Sparkline */
+.sparkline-container {
+    margin-top: 20px;
+    padding: 12px;
+    background: #f3f4f6;
+    border-radius: 12px;
+}
+
+/* Monte Carlo chart */
+.chart-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 14px;
+}

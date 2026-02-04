@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InvestIQ - Stock Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">InvestIQ</div>
+        <div class="nav-links">
+            <span>Stocks</span>
+            <span>Explore</span>
+            <span>Holdings</span>
+            <span>Watchlist</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>Stock Prediction Dashboard</h2>
+
+            <div class="search-container">
+                <input type="text" id="stockInput" placeholder="Search stock..." oninput="searchStocks(this.value)">
+                <button onclick="getPrediction()">Predict</button>
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+
+            <div id="result"></div>
+
+            <!-- Mini historical sparkline -->
+            <div class="sparkline-container">
+                <canvas id="sparklineChart" height="80"></canvas>
+            </div>
+
+            <!-- Monte Carlo chart -->
+            <div class="chart-container">
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
